@@ -1,38 +1,128 @@
-.App {
+.logo {
+  width: 105px;
+  height: 90px;
+  left: 10px;
+  align-items: flex-start;
+  transform: translate(0%, 10%);
+  position: absolute;
+}
+
+.logoText {
+  position: absolute;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  display: flex;
+  width: 300px;
+  height: 80px;
+  left: 130px;
+  top: 30px;
+}
+
+.kalasa {
+  padding-left: 44px;
+  font-size: calc(20% width);
+  display: flex;
+  position: absolute;
+  color: black;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  
+}
+/* for header */
+
+.underLineDesign {
+  position: absolute;
+  width: 105px;
+  height: 18px;
+  left: 130px;
+  top: 68px;
+
+  object-fit: fill;
+  object-position: 50% 50%;
+}
+
+/* for navbar
+/* .underLineDesign {
+  position: absolute;
+  width: 95px;
+  height: 10px;
+  left: 46px;
+  top: 36px;
+  object-fit:cover;
+  object-position: 50% 50%;
+} */
+
+.searchBox {
+  position: absolute;
+  width: 35%;
+  display: flex;
+  margin: 0 -1rem 1rem -1rem;
+  height: 28px;
+  left: 35%;
+  top: 39px;
+  padding-left: 3vmax;
+  font-style: normal;
+  font-weight: normal;
+  align-content: stretch;
+
+  
+}
+
+.btnSignUp {
+
+  position: absolute;
+  width: 80px;
+  height: 28px;
+  right: 94px;
+  top: 39px;
+
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: flex-end;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.btnLogin {
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+  position: absolute;
+  width: 80px;
+  height: 28px;
+  right: 5px;
+  top: 39px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-end;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.header{
+position: absolute;
+display: flexbox;
+width: 100%;
+height: 15%;
+left: 0px;
+top: 0px;
+background: #FF781F;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+* {
+  font-family: 'Sora' , sans-serif;
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
 }
