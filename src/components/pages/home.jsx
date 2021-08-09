@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../images/Logo.jpeg";
 import underLineDesign from "../images/underlineDesign.png";
-import "/workspace/kalasaWeb/kalasa-app/src/App.css";
+import "../../App.css";
 // import '../font-awesome/css/font-awesome.min.css';
 
 

@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {NavLink, Link} from 'react-router-dom';
 import {FiAlignRight,FiXCircle,FiChevronDown } from "react-icons/fi";
 import "./navbarmenu.css";
-
+import logo from "../images/logo&text.png";
 
 
 
@@ -32,10 +32,12 @@ const Navbarmenu = () => {
 
   return(
 		<header className="header_middle">
-      <div className="container" >
-          <div className="container">
+           <div className="container">
             <div className="row">
-            <div className="header__middle__menus">
+              <div className="header__middle__logo">
+              <img  src={logo} alt="Logo" />
+              </div>
+              <div className="header__middle__menus">
                 <nav className="main-nav" >
                   {/* Responsive Menu Button */}
                   {isResponsiveclose === true ? <>
@@ -54,9 +56,9 @@ const Navbarmenu = () => {
 
                     <li onClick={toggleSubmenu} className="menu-item sub__menus__arrows" > <Link to="#"> SignUp <FiChevronDown /> </Link>
                             <ul className={boxClassSubMenu.join(' ')} > 
-                                <li> <NavLink onClick={toggleClass} activeClassName='is-active'  to={`/signuppujari`}> SignUp as Pujari </NavLink> </li>
-                                <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/signuptemple`}>SignUp as Temple</NavLink> </li>
-                                <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/signupvisitor`}> SignUp as Visitor </NavLink> </li>
+                                <li> <NavLink className="signup-items" onClick={toggleClass} activeClassName='is-active'  to={`/signuppujari`}> SignUp as Pujari </NavLink> </li>
+                                <li><NavLink className="signup-items" onClick={toggleClass} activeClassName='is-active' to={`/signuptemple`}>SignUp as temple</NavLink> </li>
+                                <li><NavLink className="signup-items" onClick={toggleClass} activeClassName='is-active' to={`/signupvisitor`}> SignUp as Visitor </NavLink> </li>
                             </ul>
                         </li>
                         <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/login`}> Login </NavLink> </li>
@@ -65,8 +67,7 @@ const Navbarmenu = () => {
               </div>
           </div>
       </div>
-      </div>
-
+     
 	  </header>
 
     )
