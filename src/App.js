@@ -10,16 +10,20 @@ import SignUpTemple from './components/forms/signupTemple';
 import SignUpVisitor from "./components/forms/signupVisitor.jsx";
 import Login from './components/forms/loginform';
 import Navbarmenu from "./components/menu/navbarMenu.js";
+import Copyright from "../src/components/footer/copyright";
 import "./App.css";
+
 
 
 function App() {
   return (
-    <div>
-      <Router basename="/">
+   
+  <div>
+    <Router basename="/">
         {/* Adding menu component */ }
         <Navbarmenu />
-        {/* <Home /> */}
+        {/* <Footer /> */}
+        <Copyright />
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/temples" component={Temples} />
@@ -32,7 +36,8 @@ function App() {
           <Route path="/login" component={Login} />
         </Switch>
       </Router>
-    </div>
+     </div>
+    
 );
 }
 

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 body {
   background-color: rgb(255, 255, 255);
   margin: auto;
@@ -15,7 +16,7 @@ body {
 	padding-left:15px;
 	margin-right:auto;
 	margin-left:auto;
-  /* /* display: flex;  */
+  overflow-y: hidden;
   background: #ff3c00 ; 
   margin-bottom: 60px;
   width: 100%;
@@ -29,20 +30,20 @@ img {
 }
 
 
-
 .sec__one {
-    position: relative;
-    width: 100%;
-    display: flex;
-    padding: 60px 0;
+  position: relative;
+  width: 100%;
+  display: flex;
+  padding: 60px 0;
 }
 .sec__one h1{
-  text-align: center;
-  display: block;
-  margin: 0 auto;
-  color: #07a8ff;
-  font-family: 'Inter', sans-serif;
-}
+text-align: center;
+display: block;
+margin: 0 auto;
+color: #07a8ff;
+font-family: 'Inter', sans-serif;
+} 
+
 .navBar .logo img {
   float: left;
   max-height: 120px;
@@ -209,6 +210,10 @@ li {
   margin: 17px 0 0 0;
  }
 
+ .signup-items {
+    display: inline-block;
+  white-space: nowrap;
+ }
 
 @media(max-width:1092px){
 .header__middle__logo {width: 77%;}
@@ -219,7 +224,7 @@ li {
 .main-nav .menubar__button {
   display: block!important;
   float: right;
-  background-color: #080808;
+  background-color: #000000;
   color: #fff;
   padding: 6px 7px;
   border-radius: 5px;
@@ -234,8 +239,8 @@ li {
   position: absolute;
   left: 0;
   z-index: 10007;
-  background-color: #d8f1ff;
-  border-bottom: 3px solid #ff3d00;
+  background-color: #808185;
+  border-bottom: 2px solid #ffffff;
   right: 0;
   padding-bottom: 17px;
   padding-top: 57px;
