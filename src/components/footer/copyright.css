@@ -1,21 +1,17 @@
-/* body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  min-height: 100vh;
+.copyright {
+  position: absolute;
+  height: 50px;
   width: 100%;
-} */
-
-  .copyright {
-  background-color: rgb(41, 41, 41);
-  border-top: 2px solid rgb(130, 129, 129);
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  color: white;
-  text-align: center;
-  font-size: 0.8rem;
+  background-color: #333333;
+  bottom: 0vh;
 
   }
-  
- 
+
+  .copyright-text{
+    position: relative;
+      color: white;
+    line-height: 50px;
+    font-size: 1.2rem;
+    text-align: center;
+    
+  }

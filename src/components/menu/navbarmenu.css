@@ -16,9 +16,9 @@ body {
 	padding-left:15px;
 	margin-right:auto;
 	margin-left:auto;
-  overflow-y: hidden;
+   /* display: flex;  */
   background: #ff3c00 ; 
-  margin-bottom: 60px;
+  margin-bottom: 600px;
   width: 100%;
   height: 108px;
 }
@@ -29,13 +29,14 @@ img {
   /* padding-top: 3px; */
 }
 
-
 .sec__one {
-  position: relative;
+  position: fixed;
   width: 100%;
   display: flex;
   padding: 60px 0;
+  top: 200px;
 }
+
 .sec__one h1{
 text-align: center;
 display: block;
@@ -224,7 +225,7 @@ li {
 .main-nav .menubar__button {
   display: block!important;
   float: right;
-  background-color: #000000;
+  background-color: #080808;
   color: #fff;
   padding: 6px 7px;
   border-radius: 5px;
@@ -239,8 +240,8 @@ li {
   position: absolute;
   left: 0;
   z-index: 10007;
-  background-color: #808185;
-  border-bottom: 2px solid #ffffff;
+  background-color: #939393;
+  border-bottom: 3px solid #ffffff;
   right: 0;
   padding-bottom: 17px;
   padding-top: 57px;

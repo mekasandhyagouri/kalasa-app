@@ -11,18 +11,15 @@ import SignUpVisitor from "./components/forms/signupVisitor.jsx";
 import Login from './components/forms/loginform';
 import Navbarmenu from "./components/menu/navbarMenu.js";
 import Copyright from "../src/components/footer/copyright";
+import Footer from "../src/components/footer/Footer.js";
 import "./App.css";
-
 
 
 function App() {
   return (
-   
-  <div>
-    <Router basename="/">
-        {/* Adding menu component */ }
+    <div>
+      <Router basename="/">
         <Navbarmenu />
-        {/* <Footer /> */}
         <Copyright />
         <Switch>
           <Route path="/" exact component={Home} />
@@ -36,9 +33,14 @@ function App() {
           <Route path="/login" component={Login} />
         </Switch>
       </Router>
-     </div>
-    
+    </div>
+
 );
 }
 
 export default App;
+
+
+
+
+   
