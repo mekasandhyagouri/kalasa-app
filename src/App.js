@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { withRouter } from "react-router";
 import Home from "./components/pages/home.jsx";
 import Temples from "../src/components/pages/temples.jsx";
 import Pujari from "../src/components/pages/pujari.jsx";
@@ -16,27 +17,36 @@ import "./App.css";
 
 
 function App() {
+
   return (
-    <div>
+    <div className="App">
+      
       <Router basename="/">
-        <Navbarmenu />
-        <Copyright />
+        
         <Switch>
+          <Route path="/signuppujari" component={SignUpPujari} />
+          <Route path="/signuptemple" component={SignUpTemple} />
+          <Route path="/signupvisitor" component={SignUpVisitor} />
+          <Route path="/login" component={Login} />
+
+          <div>
+          <Navbarmenu />
+          <Copyright />
           <Route path="/" exact component={Home} />
           <Route path="/temples" component={Temples} />
           <Route path="/pujari" component={Pujari} />
           <Route path="/contactus" component={ContactUS} />
           <Route path="/about" component={About} />
-          <Route path="/signuppujari" component={SignUpPujari} />
-          <Route path="/signuptemple" component={SignUpTemple} />
-          <Route path="/signupvisitor" component={SignUpVisitor} />
-          <Route path="/login" component={Login} />
+          </div>
+
         </Switch>
+      
+
       </Router>
     </div>
 
-);
-}
+  );
+  }
 
 export default App;
 
