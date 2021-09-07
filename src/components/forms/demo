@@ -1,0 +1,87 @@
+// import React, {useState} from 'react';
+// import Joi from 'joi-browser';
+// import Form from "./common/form";
+// import logo from "../images/logo&text.png";
+// import PhoneNumberInput from './common/phoneNumberInput';
+// import PhoneInput from 'react-phone-number-input';
+// import PasswordInput from './common/passwordVisiblity';
+// import ConfirmPasswordInput from './common/confirmPasswordVisibility';
+// import 'react-phone-number-input/style.css';
+// import   "@fortawesome/fontawesome-svg-core";
+// import "./forms.css";
+// import "./common/phone-input.css";
+
+// class SignUpPujari extends Form {
+//   state = {
+//     data: { 
+//       firstname:  "",
+//       lastname: "",
+//       email: "",
+//       phonenumber: "",
+//       address: "",
+//       city: "",
+//       country: "" ,
+//       zipcode: "",
+//       password: "",
+//       password2: ""
+//     },
+//     errors: {},
+//     // value: "",
+//     // setvalue: ""
+//   };
+
+//   schema = {
+//     username: Joi.string().required().label('Username'),
+//     password: Joi.string().required().label("Password")
+//   };
+  
+
+//   doSubmit = () => {
+//     //call the server
+//     console.log("submitted")
+
+//   };
+
+
+
+//   render() { 
+    
+//     return (
+//     <div>
+//        <img onClick={ e => window.location.href="/home" }className="logo" src={logo} alt="Logo" >
+//        </img>
+//       <h1 className="arrow-back">
+//       <i onClick={ e => window.location.href="/home"} className="fas fa-arrow-left"></i></h1>
+//       <h1>SIGN UP</h1>
+//      <h3>Create Your Account,</h3>
+//       <form onSubmit={this.handleSubmit} className="form">
+//         {this.renderInput('firstname', "First Name", "text")}
+//         {this.renderInput('lastname', "Last Name", "text")}
+//         {this.renderInput('email', "Email Address", "email")}
+//         {this.renderInput('phonenumber', "Phone Number", "tel")}
+//         {this.renderInput('address', "Address", "street")}
+//         {this.renderInput('city', "City", "cities")} 
+//         {this.renderInput('password', "Password", "password")}
+        
+//       <div className="input-icons-phone">
+//         <PhoneInput
+//           className="phone-input"
+//           type="tel"
+//           id="number"
+//           name="number"
+//           placeholder="Phone Number"
+//           defaultCountry="IN"
+//           // value={value}
+//           // onChange={setValue}
+//         />
+//         <i className="fas fa-phone-alt phone-icon">
+//         </i>
+//         </div>
+//         {this.renderButton("Sign Up")}
+//       </form>
+//     </div>
+//     );
+//   }
+// }
+ 
+// export default SignUpPujari;

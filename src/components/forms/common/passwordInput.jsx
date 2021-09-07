@@ -1,15 +1,14 @@
 import React from "react";
 import Visibility from "@material-ui/icons/Visibility";
 import VisibilityOff from "@material-ui/icons/VisibilityOff";
-import "./forms.css";
+import "../forms.css";
 
 
-
-const PasswordInput = () => {
+const PasswordInput = ({ placeholder, name, error, ...rest}) => {
   const [values, setValues] = React.useState({
-	password: "",
 	showPassword: false,
 });
+
 
 const handleClickShowPassword = () => {
 	setValues({ ...values, showPassword: !values.showPassword });
@@ -19,29 +18,26 @@ const handleMouseDownPassword = (event) => {
 	event.preventDefault();
 };
 
-const handlePasswordChange = (prop) => (event) => {
-	setValues({ ...values, [prop]: event.target.value });
-};
-
-
 
 return (
   <div>
 	  <input
-       className="input"
-        placeholder = "Password [minimum 8 characters... ]"
-        type={values.showPassword ? "text" : "password"}
-        onChange={handlePasswordChange("password")}
-        value={values.password}
-        required
+      {...rest}
+      name={name}
+      id= {name}
+      className="input"
+      placeholder = {placeholder}
+      type={values.showPassword ? "text" : "password"}
+     
       />
     <i
-    className ="icon"
+    className = "icon"
     onClick={handleClickShowPassword}
     onMouseDown={handleMouseDownPassword}
     >
     {values.showPassword ? <Visibility /> : <VisibilityOff />}
     </i>
+    { error && <div className="alert-message">{error}</div>}
   </div>
 );
 };

@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import {NavLink, Link} from 'react-router-dom';
 import {FiAlignRight,FiXCircle,FiChevronDown } from "react-icons/fi";
-import "./navbarmenu.css";
 import logo from "../images/logo&text.png";
+import "./navbarmenu.css";
 
 
 const Navbarmenu = () => {

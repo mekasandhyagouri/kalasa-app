@@ -19,7 +19,7 @@ h1{
   margin-left: 10%;
   font: Californian FB;
   font-weight:bolder;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 h3{
@@ -30,7 +30,7 @@ h3{
 }
 
 
-input {
+.input-field {
   border: 0;
   outline: 0;
   background: transparent;
@@ -49,8 +49,8 @@ input {
 .icon {
   color: rgb(123, 123, 123);
 }
-
-/* for password  */
+/* 
+for password  */
 
 .input {
   border: 0;
@@ -68,14 +68,43 @@ input {
 }
 
 /* for phone number */
-.phone-input {
+
+
+ .phone-input {
+  border: 0;
+  outline: 0;
   background: transparent;
-  width: 59%;
+  border-left: 500px;
+  width: 60%;
+  padding-top: 25px;
   margin-right: -20px;
   margin-left: 14%;
   z-index: 10;
-  padding-left: 10px;
+  padding-bottom: 25px;
 }
+
+.input-icons-phone{
+  display: flex;
+  width:100%;
+}
+
+.phone-icon{
+  color: rgb(123, 123, 123);
+  display: flex; 
+
+
+  margin-right: 0 ;
+  align-self: center;
+}
+
+.phone-input {
+  background: transparent;
+  width: 100%;
+  margin-right: -20px;
+  margin-left: -2%;
+  z-index: 10;
+  padding-left: 10px;
+} 
 
 /* styling of checkbox and agree content */
 
@@ -95,58 +124,82 @@ input {
     font-size: 18px;
     line-height: normal;
     max-width: 60%;
-    padding-left: 80px;
+    margin-left: 7%;
   } 
 
  .checkbox {
     color: rgb(0, 0, 0);
     height: 25px;
-    width:25px;
+    width: 25px;
+    float: left;
+    margin-left: 10%;
+  }
+   
+  span {
+    display: table;
+    padding-left: 50px;
+    
   }
   
-  p a{
+ span a{
     text-decoration: none;
     color:  #001EBC;
     
   }
 
   /* styling of button */
+/* 
+  button {
+    display:  grid;
+    background-color: yellowgreen;
+    padding: 20px 80px;
+    align-content: center;
+    margin: auto;
+  } */
 
  .button {
-  background-color: #ff3c00; /* Green */
-  border: none;
+  background-color: #ff3c00; 
+  border: none; 
   color: white;
-  text-align: center;
-  text-decoration: none;
+  display: grid;
   font-size: 32px;
-  padding: 14px 80px;
-  width: 30%;
-  display: flex;
+  padding: 20px 80px;
+  text-align: center;
   margin-top: 3%;
-  margin-bottom: 10%;
+  margin-bottom: 20px;
   border: 1px solid #ff8899;
-  justify-content: center;
-  align-items: center;
   transition-duration: 0.4s;
   white-space: nowrap;
   font-weight: bold;
   font-style: normal;
-  font-family: sans-serif;
+  font-family: sans-serif; 
+  margin: auto;
  }
 
- .button:hover {
+ button:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  color: black;
 }
 
- .disabled {
+ .button:disabled {
   opacity: 0.6;
   cursor: not-allowed;
+  color:rgb(255, 255, 255);
+  background-color: rgb(255, 84, 4);
 }
 
-button {
-  border: 1px solid;
-  padding: 10px;
-  width: 100px;
-  outline: none;
-  margin: auto;
+.alert-message {
+  color: crimson;
+  font-size: 24px;
+  margin-left: 16%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.already-login {
+  color: black;
+  font-size: 24px;
+  margin-left: 26%;
+  margin-bottom: 10%;
+  margin-top: 30px;
 }
